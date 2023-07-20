@@ -1,0 +1,126 @@
+﻿@{
+    ViewData["Title"] = "Field List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" type="text/css" href="~/css/field.dev.css">
+</head>
+<body>
+    <header class="section__header">
+        <div class="section__header-left">
+            <h3 class="section__title">Danh sách sân bóng</h3>
+            <p class="section__subtitle">Danh sách tất cả các sân bóng hiện đang được quản lý</p>
+        </div>
+        <div class="section__header-right">
+            <span class="button">
+                <a href="/quan-ly/san-bong/them-moi">
+                    <i class="fas fa-plus-circle"></i>&nbsp;&nbsp;Thêm mới
+                </a>
+            </span>
+        </div>
+    </header>
+    <div class="section__body">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th> Tên sân bóng</th>
+                    <th> Chiều dài (m)</th>
+                    <th> Chiều rộng (m)</th>
+                    <th> Diện tích (m2)</th>
+                    <th> Ghi chú</th>
+                </tr>
+            </thead>
+            <tbody class="animated fadeIn">
+                <tr>
+                    <td class="table-dropdown-menu-wrapper">
+                        <span class="table-dropdown-menu-toggle"><i class="fas fa-bars"></i></span>
+                        <ul class="table-dropdown-menu">
+                            <li class="table-dropdown-menu-item"><a href="/quan-ly/example-slug/xem-thong-tin/1">Xem chi tiết</a></li>
+                            <li class="table-dropdown-menu-item"><a href="/quan-ly/example-slug/cap-nhat/1">Cập nhật thông tin</a></li>
+                            <li class="table-dropdown-menu-item"><a href="/quan-ly/san-bong">Xóa khỏi danh sách</a></li>
+                        </ul>
+                    </td>
+                    <td class="table-text-bold">1</td>
+                    <td class=""></td>
+                    <td class=""></td>
+                    <td class=""></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="table-dropdown-menu-wrapper">
+                        <span class="table-dropdown-menu-toggle"><i class="fas fa-bars"></i></span>
+                        <ul class="table-dropdown-menu">
+                            <li class="table-dropdown-menu-item"><a href="/quan-ly/example-slug/xem-thong-tin/2">Xem chi tiết</a></li>
+                            <li class="table-dropdown-menu-item"><a href="/quan-ly/example-slug/cap-nhat/2">Cập nhật thông tin</a></li>
+                            <li class="table-dropdown-menu-item"><a href="/quan-ly/san-bong">Xóa khỏi danh sách</a></li>
+                        </ul>
+                    </td>
+                    <td class="table-text-bold">2</td>
+                    <td class=""></td>
+                    <td class=""></td>
+                    <td class=""></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="table-dropdown-menu-wrapper">
+                        <span class="table-dropdown-menu-toggle"><i class="fas fa-bars"></i></span>
+                        <ul class="table-dropdown-menu">
+                            <li class="table-dropdown-menu-item"><a href="/quan-ly/example-slug/xem-thong-tin/2">Xem chi tiết</a></li>
+                            <li class="table-dropdown-menu-item"><a href="/quan-ly/example-slug/cap-nhat/2">Cập nhật thông tin</a></li>
+                            <li class="table-dropdown-menu-item"><a href="/quan-ly/san-bong">Xóa khỏi danh sách</a></li>
+                        </ul>
+                    </td>
+                    <td class="table-text-bold">2</td>
+                    <td class=""></td>
+                    <td class=""></td>
+                    <td class=""></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="table-dropdown-menu-wrapper">
+                        <span class="table-dropdown-menu-toggle"><i class="fas fa-bars"></i></span>
+                        <ul class="table-dropdown-menu">
+                            <li class="table-dropdown-menu-item"><a href="/quan-ly/example-slug/xem-thong-tin/2">Xem chi tiết</a></li>
+                            <li class="table-dropdown-menu-item"><a href="/quan-ly/example-slug/cap-nhat/2">Cập nhật thông tin</a></li>
+                            <li class="table-dropdown-menu-item"><a href="/quan-ly/san-bong">Xóa khỏi danh sách</a></li>
+                        </ul>
+                    </td>
+                    <td class="table-text-bold">2</td>
+                    <td class=""></td>
+                    <td class=""></td>
+                    <td class=""></td>
+                    <td class=""></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="table-pagination">
+            <div class="table-pagination__left">
+                <p>Không có kết quả nào trong danh sách</p>
+            </div>
+            <div class="table-pagination__right">
+                <label class="table-pagination__label">Hiển thị dòng</label>
+                <select class="table-pagination__select">
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                    <option value="250">250</option>
+                    <option value="500">500</option>
+                    <option value="1000">1000</option>
+                    <option value="2500">2500</option>
+                    <option value="5000">5000</option>
+                </select>
+                <label class="table-pagination__label">Đến trang</label>
+                <select class="table-pagination__select">
+                    <option value="1">1</option>
+                </select>
+                <label class="table-pagination__label"> / 1</label><span class="table-pagination__button"><i class="fas fa-chevron-left"></i></span><span class="table-pagination__button"><i class="fas fa-chevron-right"></i></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
